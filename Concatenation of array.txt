@@ -1,0 +1,19 @@
+import java.util.*;
+class Solution {
+    public int[] getConcatenation(int[] nums) {
+        int[] arr=new int[nums.length*2];
+        int a=0,b=0;
+        while(a<nums.length)
+        {
+            arr[a]=nums[a];
+            a++;
+        }
+        b=a;
+        for(int k=0;k<nums.length;k++)
+        {
+            arr[b]=nums[k];
+            b++;
+        }
+        return arr;
+    }
+}
