@@ -1,0 +1,27 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter the size of 2d matrix = ");
+    int R=sc.nextInt();
+    int C=sc.nextInt();
+    int matrix[][]=new int[R][C];
+    for(int row=0;row<R;row++)
+      {
+        for(int col=0;col<C;col++)
+          {
+            matrix[row][col]=sc.nextInt();
+          }
+      }
+    System.out.println("Transpose of given 2d matrix is = /n");
+    for(int col=0;col<C;col++)
+      {
+        for(int row=0;row<R;row++)
+          {
+            System.out.print(matrix[row][col]+" ");
+          }
+        System.out.println("");
+      }
+    
+  }
+}
