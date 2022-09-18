@@ -1,0 +1,21 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the String = \n");
+    String str=sc.nextLine();
+    int left=0,right=str.length()-1;
+    while(left<right)
+      {
+        if(str.charAt(left)!=str.charAt(right))
+        {
+          System.out.print("Not a palindrome");
+          return;
+        }
+        left++;
+        right--;
+      }
+    System.out.print("palindrome");
+    return;
+  }
+}
