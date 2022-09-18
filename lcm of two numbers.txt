@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d %d",&a,&b);
+    int bigValue;
+    if(a>b){
+        bigValue=a;
+    }
+    else{
+        bigValue=b;
+    }
+    while(1){
+        if((bigValue%a==0) && (bigValue%b==0)){
+            printf("%d",bigValue);
+            break;
+        }
+       ++bigValue;
+    }
+}

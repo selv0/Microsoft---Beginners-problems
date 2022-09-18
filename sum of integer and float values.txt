@@ -1,0 +1,12 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the Integer value :");
+    int i=sc.nextInt();
+    System.out.println("Enter the Float value :");
+    float f=sc.nextFloat();
+    float ans=i+f;
+    System.out.println("The answer is "+ans);
+  }
+}
